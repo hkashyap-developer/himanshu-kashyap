@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "Our Mission", "Our Team", "Contact"];
+  const navItems = ["Home", "Our Mission", "Our Team", "Dashboard", "Login"];
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
@@ -17,7 +17,7 @@ export default function Header() {
           {navItems.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/${item.toLowerCase()}`}
               className="text-gray-700 hover:text-black transition"
             >
               {item}

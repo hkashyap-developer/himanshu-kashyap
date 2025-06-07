@@ -1,3 +1,6 @@
+import { cn } from "@/lib/utils";
+import { GridPattern } from "@/components/magicui/grid-pattern";
+
 // components/CardGrid.jsx
 export default function CardGrid() {
   const cards = [
@@ -32,22 +35,34 @@ export default function CardGrid() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {cards.map(({ id, image, title, subtitle, link }) => (
-        <div
-          key={id}
-          className="bg-white shadow hover:shadow-md transition overflow-hidden"
-        >
-          <img src={image} alt={title} className="w-full h-60 object-cover" />
-          <div className="p-3">
-            <h3 className="text-md font-semibold">{title}</h3>
-            <p className="text-xs text-gray-600 mb-3">{subtitle}</p>
-            <a href={link} className="text-blue-600 text-sm font-medium">
-              Read More →
-            </a>
+    <div className="relative flex size-full items-center justify-center overflow-hidden bg-background p-20">
+      <GridPattern
+        width={20}
+        height={20}
+        x={-1}
+        y={-1}
+        className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
+        )}
+      />
+
+      <section className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {cards.map(({ id, image, title, subtitle, link }) => (
+          <div
+            key={id}
+            className="bg-white shadow hover:shadow-md transition overflow-hidden"
+          >
+            <img src={image} alt={title} className="w-full h-60 object-cover" />
+            <div className="p-3">
+              <h3 className="text-md font-semibold">{title}</h3>
+              <p className="text-xs text-gray-600 mb-3">{subtitle}</p>
+              <a href={link} className="text-blue-600 text-sm font-medium">
+                Read More →
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+    </div>
   );
 }
