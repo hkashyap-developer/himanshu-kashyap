@@ -3,28 +3,28 @@ export default function CardGrid() {
   const cards = [
     {
       id: 1,
-      image: "https://source.unsplash.com/600x400/?culture,india",
+      image: "https://i.ibb.co/NdGf1FjM/photo-1748968218568-a5eac621e65c.jpg",
       title: "Cultural Tours",
       subtitle: "Dive into rich traditions of Punjab & Uttarakhand.",
       link: "#",
     },
     {
       id: 2,
-      image: "https://source.unsplash.com/600x400/?nature,hiking",
+      image: "https://i.ibb.co/NdGf1FjM/photo-1748968218568-a5eac621e65c.jpg",
       title: "Nature Trails",
       subtitle: "Explore eco-stays, hikes, and waterfalls.",
       link: "#",
     },
     {
       id: 3,
-      image: "https://source.unsplash.com/600x400/?village,india",
+      image: "https://i.ibb.co/NdGf1FjM/photo-1748968218568-a5eac621e65c.jpg",
       title: "Village Life",
       subtitle: "Live the simplicity and charm of rural India.",
       link: "#",
     },
     {
       id: 4,
-      image: "https://source.unsplash.com/600x400/?food,indian",
+      image: "https://i.ibb.co/NdGf1FjM/photo-1748968218568-a5eac621e65c.jpg",
       title: "Food Discovery",
       subtitle: "Savor local flavors from street to farm kitchens.",
       link: "#",
@@ -38,14 +38,11 @@ export default function CardGrid() {
           key={id}
           className="bg-white shadow hover:shadow-md transition overflow-hidden"
         >
-          <img src={image} alt={title} className="w-full h-36 object-cover" />
+          <img src={image} alt={title} className="w-full h-60 object-cover" />
           <div className="p-3">
             <h3 className="text-md font-semibold">{title}</h3>
             <p className="text-xs text-gray-600 mb-3">{subtitle}</p>
-            <a
-              href={link}
-              className="text-blue-600 text-sm font-medium hover:underline"
-            >
+            <a href={link} className="text-blue-600 text-sm font-medium">
               Read More →
             </a>
           </div>
