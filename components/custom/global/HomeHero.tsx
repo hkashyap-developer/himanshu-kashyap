@@ -11,20 +11,20 @@ export default function HeroSlider() {
     {
       id: 1,
       image: "/slide1.jpg",
-      heading: "Explore Culture",
-      sub: "Travel with soul",
+      heading: "Bot X",
+      sub: "Robots for everything",
     },
     {
       id: 2,
       image: "/slide2.jpg",
-      heading: "Discover Nature",
-      sub: "Eco-stays, hikes, and more",
+      heading: "Bot X",
+      sub: "Robots for everything",
     },
     {
       id: 3,
       image: "/slide3.jpg",
-      heading: "Live the Tradition",
-      sub: "Village stays in India",
+      heading: "Bot X",
+      sub: "Robots for everything",
     },
   ];
 
@@ -44,8 +44,8 @@ export default function HeroSlider() {
                 className="w-full h-full bg-cover bg-center flex items-center justify-center text-white text-center px-4"
                 style={{ backgroundImage: `url(${image})` }}
               >
-                <div className="bg-black bg-opacity-50 p-6 rounded-xl max-w-xl">
-                  <h1 className="text-3xl md:text-5xl font-bold mb-2">
+                <div className="bg-black bg-opacity-50 p-6 max-w-xl">
+                  <h1 className="text-6xl md:text-5xl font-bold mb-2">
                     {heading}
                   </h1>
                   <p className="text-sm md:text-lg">{sub}</p>
