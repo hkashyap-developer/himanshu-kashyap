@@ -6,12 +6,12 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = ["Home", "Our Mission", "Our Team", "Contact"];
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-xl font-bold">Logo</h1>
+        <h1 className="text-2xl font-bold">Bot X</h1>
 
         <nav className="hidden md:flex gap-6">
           {navItems.map((item) => (

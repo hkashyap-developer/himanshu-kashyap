@@ -1,9 +1,11 @@
 import Header from "@/components/custom/global/header";
+import HomeHero from "@/components/custom/global/HomeHero";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <HomeHero />
     </>
   );
 }
