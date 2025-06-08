@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { GridPattern } from "@/components/magicui/grid-pattern";
+import Image from "next/image";
 
 // components/CardGrid.jsx
 export default function CardGrid() {
@@ -52,7 +53,11 @@ export default function CardGrid() {
             key={id}
             className="bg-white shadow hover:shadow-md transition overflow-hidden"
           >
-            <img src={image} alt={title} className="w-full h-60 object-cover" />
+            <Image
+              src={image}
+              alt={title}
+              className="w-full h-60 object-cover"
+            />
             <div className="p-3">
               <h3 className="text-md font-semibold">{title}</h3>
               <p className="text-xs text-gray-600 mb-3">{subtitle}</p>
