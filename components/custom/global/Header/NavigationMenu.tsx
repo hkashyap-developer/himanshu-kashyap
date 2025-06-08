@@ -68,13 +68,10 @@ export default function NavigationMenuDemo() {
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                  <Link href="#">About Us</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Blocks</Link>
+                  <Link href="#">Case Studies</Link>
                 </NavigationMenuLink>
               </li>
             </ul>

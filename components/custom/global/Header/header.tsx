@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import NavigationMenu from "./NavigationMenu";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,8 @@ export default function Header() {
         </div>
 
         <div className="flex gap-4">
+          <MobileMenu />
+
           <Button className="cursor-pointer">Donate</Button>
 
           <button
