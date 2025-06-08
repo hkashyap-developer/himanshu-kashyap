@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetClose,
@@ -16,7 +15,10 @@ export default function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
+        <Button>
+          <Menu size={24} />
+          Menu
+        </Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
