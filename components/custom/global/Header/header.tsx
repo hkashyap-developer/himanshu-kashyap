@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import NavigationMenu from "./NavigationMenu";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,28 +17,25 @@ export default function Header() {
         <Image
           src="https://i.ibb.co/spPh6DZ7/Thought-2-1.png"
           alt="Build XI Logo"
-          width={160}
+          width={140}
           height={400}
           className=""
         />
-        <nav className="hidden md:flex gap-6">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              className="text-gray-700 hover:text-black transition"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-        test
-        <button
-          className="md:hidden text-gray-700"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+
+        <div className="hidden md:block">
+          <NavigationMenu />
+        </div>
+
+        <div className="flex gap-4">
+          <Button className="cursor-pointer">Donate</Button>
+
+          <button
+            className="md:hidden text-gray-700"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       {menuOpen && (
         <div className="md:hidden bg-white px-4 pb-4">
