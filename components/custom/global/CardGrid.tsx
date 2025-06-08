@@ -56,6 +56,8 @@ export default function CardGrid() {
             <Image
               src={image}
               alt={title}
+              width={800}
+              height={800}
               className="w-full h-60 object-cover"
             />
             <div className="p-3">
