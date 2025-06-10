@@ -9,7 +9,7 @@ export const ImagesSlider = ({
   overlay = true,
   overlayClassName,
   className,
-  autoplay = true,
+  autoplay = false,
   direction = "up",
 }: {
   images: string[];

@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-gray-50 text-gray-700 text-sm py-6 mt-10">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-4 text-center md:text-left md:flex-row md:justify-between md:items-center">
         {/* Logo */}
-        <div className="font-bold text-2xl">Bot X</div>
+        <div className="font-bold text-2xl">Builder XI</div>
 
         {/* Accordion Menu for Mobile */}
         <div className="md:hidden">
