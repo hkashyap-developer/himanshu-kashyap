@@ -4,25 +4,27 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import NavigationMenu from "./NavigationMenu";
 import MobileMenu from "./MobileMenu";
+import { ShinyButton } from "@/components/magicui/shiny-button";
 
 export default function Header() {
   return (
-    <header className="w-full bg-white shadow-md sticky top-0 z-50">
+    <header className="w-full sticky top-0 z-50 bg-white backdrop-blur-2xl">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <Image
           src="https://i.ibb.co/spPh6DZ7/Thought-2-1.png"
           alt="Build XI Logo"
-          width={140}
+          width={160}
           height={400}
           className=""
         />
 
-        <div className="hidden md:block">
+        <div className="hidden md:hidden">
           <NavigationMenu />
         </div>
 
         <div className="flex gap-4">
-          <Button className="cursor-pointer">Donate</Button>
+          <ShinyButton className="cursor-pointer">Buy us a coffee</ShinyButton>
+
           <MobileMenu />
         </div>
       </div>

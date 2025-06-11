@@ -17,7 +17,7 @@ export default function SheetDemo() {
       <SheetTrigger asChild>
         <Button>
           <Menu size={24} />
-          Menu
+          <span>Menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent>

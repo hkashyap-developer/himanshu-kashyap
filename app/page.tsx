@@ -17,12 +17,24 @@ export default function Home() {
       <Header />
 
       <HeroSectionOne />
-      <FeaturesSectionDemo />
+
+      <h2 className="text-center mt-[60px] mb-[60px] max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        Why we are the best!
+      </h2>
+
+      <div className="max-w-[320px] md:max-w-full mx-auto">
+        <FeaturesSectionDemo />
+      </div>
       <AppleCardsCarousel />
 
+      <h2 className="text-center mt-[60px] mb-[80px] max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        What out clients say
+      </h2>
       <TestimonialSlider />
       <TestimonialSliderTwo />
-      <TextHoverEffect />
+      <h2 className="text-center mt-[60px] mb-[60px] max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        Contact Us
+      </h2>
       <ContactForm />
       <Footer />
     </>
