@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import NavigationMenu from "./NavigationMenu";
-import MobileMenu from "./MobileMenu";
 import { ShinyButton } from "@/components/magicui/shiny-button";
+import Image from "next/image";
+import MobileMenu from "./MobileMenu";
+import NavigationMenu from "./NavigationMenu";
 
 export default function Header() {
   return (
